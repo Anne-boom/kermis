@@ -93,9 +93,8 @@ public class Menu {
 					Attractie mogelijkGok = (Attractie) kassa.attracties.get(i);
 					
 					if (mogelijkGok instanceof GokAttractie ) {
-						
-						Laderklimmen GokSpel = (Laderklimmen) kassa.attracties.get(i); 
-						GokSpel.kansSpelBelastingBetalen();
+						GokAttractie g =  (GokAttractie) mogelijkGok; 
+						g.kansSpelBelastingBetalen();
 						
 					}
 				}
